@@ -1,5 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
+// components
+import Social from "@/components/Social";
+
 const Home = () => {
   return (
     <section className="h-full">
@@ -26,9 +29,14 @@ const Home = () => {
                 className="uppercase flex items-center gap-2"
               >
                 <span>Download CV</span>
-                <FiDownload className="text-xl " />
+                <FiDownload className="text-xl" />
               </Button>
-              <div>socials</div>
+              <div className="mb-8 xl:mb-0">
+                <Social
+                  containerStyles="flex gap-6"
+                  iconStyles="w-9 h-9 border border-accent rounded-full flex justify-center items-center text-accent text-base hover:bg-accent hover:text-primary hover:transition-all duration-500"
+                />
+              </div>
             </div>
           </div>
           {/* image */}
