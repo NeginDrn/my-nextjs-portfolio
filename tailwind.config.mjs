@@ -29,9 +29,13 @@ export default {
         }
       },
       borderRadius: {
-        lg: "var(--radius)",
-        md: "calc(var(--radius) - 2px)",
-        sm: "calc(var(--radius) - 4px)"
+        sm: "4px", // Tailwind default for rounded-sm
+        md: "6px", // Tailwind default for rounded-md
+        lg: "8px", // Tailwind default for rounded-lg
+        xl: "12px", // Tailwind default for rounded-xl
+        "2xl": "16px", // Tailwind default for rounded-2xl
+        "3xl": "24px", // Tailwind default for rounded-3xl
+        full: "9999px" // Tailwind default for fully rounded elements
       }
     }
   },
